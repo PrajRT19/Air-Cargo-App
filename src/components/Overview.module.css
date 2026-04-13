@@ -1,0 +1,38 @@
+.wrap { padding: 0; }
+.metrics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-bottom: 18px; }
+.metric { background: #161b22; border: 0.5px solid #30363d; border-radius: 10px; padding: 14px 16px; }
+.metricLabel { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+.metricVal { font-size: 22px; font-weight: 600; color: #e6edf3; line-height: 1.2; }
+.metricSub { font-size: 11px; color: #6e7681; margin-top: 4px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+.card { background: #161b22; border: 0.5px solid #30363d; border-radius: 10px; padding: 16px 18px; }
+.cardTitle { font-size: 12px; font-weight: 500; color: #8b949e; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 14px; }
+.barRow { margin-bottom: 11px; }
+.barMeta { display: flex; justify-content: space-between; font-size: 12px; color: #8b949e; margin-bottom: 5px; }
+.barTrack { height: 5px; background: #21262d; border-radius: 3px; overflow: hidden; }
+.barFill { height: 100%; border-radius: 3px; transition: width 0.7s cubic-bezier(.4,0,.2,1); }
+.donutWrap { display: flex; align-items: center; gap: 20px; }
+.legend { flex: 1; }
+.legendRow { display: flex; align-items: center; gap: 8px; margin-bottom: 9px; font-size: 12px; color: #8b949e; }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.legendVal { margin-left: auto; font-weight: 500; color: #e6edf3; font-size: 13px; }
+.er { display: flex; align-items: flex-start; justify-content: flex-start; gap: 8px; flex-wrap: wrap; }
+.erArrow { font-size: 18px; color: #30363d; align-self: center; padding: 0 4px; }
+.erArrowDown { font-size: 18px; color: #30363d; align-self: center; padding: 0 4px; }
+.erTable { background: #0d1117; border: 0.5px solid #30363d; border-radius: 8px; padding: 10px 12px; min-width: 150px; }
+.erName { font-size: 11px; font-weight: 600; color: #1D9E75; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 0.5px solid #21262d; letter-spacing: 0.02em; }
+.erField { font-size: 11px; color: #6e7681; padding: 2px 0; display: flex; align-items: center; gap: 5px; }
+.pk { color: #EF9F27; }
+.fk { color: #378ADD; }
+.badge { font-size: 9px; font-weight: 500; padding: 1px 5px; border-radius: 3px; background: #21262d; color: inherit; }
+.procList { display: flex; flex-direction: column; gap: 0; }
+.procItem { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 0.5px solid #21262d; }
+.procItem:last-child { border-bottom: none; }
+.procNum { width: 24px; height: 24px; border-radius: 50%; background: #0F6E5630; color: #1D9E75; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.procName { font-size: 13px; font-weight: 500; color: #e6edf3; font-family: 'IBM Plex Mono', monospace; }
+.procDesc { font-size: 12px; color: #8b949e; margin-top: 2px; }
+
+@media (max-width: 700px) {
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .grid2 { grid-template-columns: 1fr; }
+}

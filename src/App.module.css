@@ -1,0 +1,12 @@
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.header { background: #0d1117; border-bottom: 0.5px solid #30363d; padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+.headerInner { display: flex; align-items: center; gap: 12px; padding: 16px 0 12px; }
+.logo { width: 36px; height: 36px; background: #1D9E75; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.title { font-size: 16px; font-weight: 600; color: #e6edf3; line-height: 1.2; }
+.subtitle { font-size: 12px; color: #8b949e; margin-top: 2px; }
+.nav { display: flex; gap: 0; overflow-x: auto; }
+.tab { padding: 10px 16px; font-size: 13px; font-family: 'Sora', sans-serif; color: #8b949e; background: transparent; border: none; border-bottom: 2px solid transparent; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+.tab:hover { color: #e6edf3; }
+.tab.active { color: #1D9E75; border-bottom-color: #1D9E75; font-weight: 500; }
+.main { flex: 1; padding: 20px 24px 40px; max-width: 1200px; width: 100%; margin: 0 auto; }
+@media (max-width: 600px) { .main { padding: 16px; } .header { padding: 0 16px; } }
